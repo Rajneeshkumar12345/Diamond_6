@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Store</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body id="content">
+  <!-- Navbar  -->
+  <nav class="navbar bg-primary fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler  text-white" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </button>
+      <a class="font-button plus"><button>A+</button></a> <a class="font-button minus"><button>A-</button></a>
+      <a class="navbar-brand text-white" href="cart.html">
+        <div class="cart">
+          <div id="cartAmount" class="cartAmount">0</div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+      </a>
+
+      <div class="offcanvas  offcanvas-start bg-success" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white">
+          <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Diamond Klean</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center text-center Nav_Content ">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">
+                <h3 class="Admin_Nav">Home</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                <h3 class="Admin_Nav">About Us</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">
+                <h3 class="Admin_Nav">Product</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <h3 class="Admin_Nav">Gallery</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">
+                <h3 class="Admin_Nav">Services</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <h3 class="Admin_Nav">Contact Us</h3>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Filter and Sort Container -->
+  <div class="container" style="margin-top: 7rem;">
+    <div class="row ">
+      <div class="form-group col-md-9">
+        <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" />
+      </div>
+      <div class="form-group col-md-3">
+        <button type="submit" class="btn btn-block btn-primary">Search</button>
+      </div>
+    </div>
+
+    <form>
+      <div class="row mt-3" id="filter">
+        <div class="form-group col-md-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- Product Card Start from  herre -->
+  <div class="shop" id="shop">
+  </div>
+
+
+  <!-- Four div container start from here -->
+  <section style="background-color: darkgray; margin-top: 3rem;">
+    <div class="container Quality">
+      <div class="row py-5 px-5">
+        <div class="col-md-2">
+          <i class="fa-solid fa-recycle fa-2xl"></i>
+        </div>
+        <div class="col-md-10">
+          <h3>Premium Materials</h3>
+          <p class="Premium">Our Cleaner Product made with top quality material, national and imported cleaner according
+            to customer requirements.</p>
+        </div>
+        <div class="col-md-2">
+          <i class="fa-solid fa-truck fa-2xl"></i>
+        </div>
+        <div class="col-md-10">
+          <h3>Fast Shipping</h3>
+          <p class="Premium">Home delivery is made to all Cordoba and the interior of the country. Own service.</p>
+        </div>
+        <div class="col-md-2">
+          <i class="fa-solid fa-battery-full fa-2xl"></i>
+        </div>
+        <div class="col-md-10">
+          <h3>Quality Assurance</h3>
+          <p class="Premium">Quality assurance For every purchase you make, we'll make sure there's no damage or flaws.
+            The quality is backed by the opinions of our customers.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Footer start from here -->
+  <div class="Foot1">
+    <footer class=" text-lg-start Home_footer">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"><i
+              class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Diamond Klean
+              </h6>
+              <p class="Footer_Text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum consequuntur commodi ducimus
+                blanditiis officiis, placeat veritatis reiciendis deleniti delectus?
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">Laravel</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Services
+              </h6>
+              <p>
+                <a href="home.html" class="reset">Home</a>
+              </p>
+              <p>
+                <a href="about.html" class="reset">About</a>
+              </p>
+              <p>
+                <a href="product.html" class="reset">Product</a>
+              </p>
+              <p>
+                <a href="services.html" class="reset">Service</a>
+              </p>
+              <p>
+                <a href="gallery.html" class="reset">Gallery</a>
+              </p>
+              <p>
+                <a href="contact.html" class="reset">Contact Us</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+
+          </div>
+      </section>
+      <div class="text-center text-muted p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="">Diamond.com</a>
+        || Design and Developed by:
+        <a class="text-reset fw-bold" href="https://codelovertechnology.com/" target="_blank">CodeLover Technology Pvt.
+          Ltd.</a>
+      </div>
+
+    </footer>
+  </div>
+
+  <script>
+    function myFunction() {
+      var input, filter, div, h5, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("shop");
+      h5 = div.getElementsByTagName("div");
+      for (i = 0; i < h5.length; i++) {
+        a = h5[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          h5[i].style.display = "";
+        } else {
+          h5[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+<script type="text/javascript">
+  $(function () {
+    $(".font-button").bind("click", function () {
+      var size = parseInt($('#content').css("font-size"));
+      if ($(this).hasClass("plus")) {
+        size = size + 1;
+      } else {
+        size = size - 1;
+        if (size <= 10) {
+          size = 10;
+        }
+      }
+      $('#content').css("font-size", size);
+    });
+  });
+</script>
+
+</body>
+<script src="src/Data.js"></script>
+<script src="src/main.js"></script>
+
+</html>

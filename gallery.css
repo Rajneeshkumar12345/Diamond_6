@@ -1,0 +1,268 @@
+  /**
+  * ! Navbar STyles are here
+  **/
+#content{
+  font-size: 19px;
+}
+
+  .offcanvas-title{
+    color: aqua;
+}
+.offcanvas-title:hover{
+    color: gold;
+}
+
+.Admin_Nav{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(247, 244, 245);
+}
+.Admin_Nav:hover{
+    color: darkorange;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+
+.Company_Name {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Logo {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  filter: 3s ease-in;
+  filter: brightness(120%);
+  margin-right: 7px;
+}
+.Logo:hover {
+  filter: brightness(100%);
+  transform: scale(1.4);
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+.ImageCard {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  color: black;
+  background-blend-mode: soft-light;
+  background-image: none;
+}
+
+.Main_Title {
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 80px;
+  color: #59b210;
+}
+.Main_Text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #59b210;
+}
+
+@media (max-width: 767px) {
+  .Main_Title {
+    position: relative;
+    margin-top: -5px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .Main_Text {
+    position: relative;
+    margin-top: -3rem;
+    margin-left: 20px;
+  }
+  .Know_more {
+    margin-top: -5rem;
+    position: absolute;
+  }
+  .Know {
+    margin-top: -5rem;
+    position: absolute;
+  }
+}
+
+.Know_more {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: #f3f8ef;
+  border: 2px solid #082aee;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 40px 30px;
+  width: 150px;
+  height: 40px;
+}
+
+.Know {
+  text-align: center;
+  background: #ee088e;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.Know_more:hover .Know {
+  width: 100%;
+}
+.Know_more:hover {
+  border: none;
+}
+
+
+/* container start from here */
+.gallery_body{
+  background-color: #077c7c;
+}
+
+.hover-1-title {
+  color: #eef3eb;
+}
+.hover-1-description {
+  color: #f2eef7;
+}
+
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+.hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.3s;
+}
+
+.hover-1-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.4s;
+}
+
+.hover-1 .hover-overlay {
+  background: rgba(206, 192, 192, 0.575);
+}
+
+.hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.hover-1:hover .hover-1-content {
+  bottom: 2rem;
+}
+
+.hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-1:hover img {
+  left: 0;
+}
+
+.hover-1:hover .hover-overlay {
+  opacity: 0;
+}
+@media (max-width: 600px) {
+  .hover-1-title {
+    font-size: 10px;
+    text-align: center;
+  }
+  .hover-1-description {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+/* Footer Css start from here */
+.Foot1 {
+  height: auto;
+  background-image: url(images/Footer.jpg);
+  background-color: rgba(0, 0, 0, 0.747);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  padding: 30px 80px 30px 30px;
+}
+.Footer_Text {
+  text-align: justify;
+}
+
+.List {
+  list-style-type: none;
+}
+.reset {
+  text-decoration: none;
+  color: aliceblue;
+}
+.reset:hover {
+  color: #ffea11;
+}
+
+@media (max-width: 600px) {
+  .Home_footer {
+    margin-left: 3rem;
+  }
+}

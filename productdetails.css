@@ -1,0 +1,247 @@
+  /**
+  * ! Navbar STyles are here
+  **/
+
+
+  .offcanvas-title{
+    color: aqua;
+}
+.offcanvas-title:hover{
+    color: gold;
+}
+
+.Admin_Nav{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(247, 244, 245);
+}
+.Admin_Nav:hover{
+    color: darkorange;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.Company_Name {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Logo {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  filter: 3s ease-in;
+  filter: brightness(120%);
+  margin-right: 7px;
+}
+.Logo:hover {
+  filter: brightness(100%);
+  transform: scale(1.4);
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+.Ab {
+  list-style: none;
+  display: inline-block;
+  /* margin: 0 20px;  */
+  display: list-item;
+  position: relative;
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Ab a {
+  text-decoration: none;
+  color: #ffea11;
+  text-transform: uppercase;
+}
+
+.Ab::after {
+  content: "";
+  height: 2px;
+  width: 0; /*100% */
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.5s;
+}
+
+.Ab:hover::after {
+  width: 5rem;
+}
+@media (max-width: 767px) {
+  .Logo {
+    margin-top: -4.4rem;
+    margin-left: 16.2rem;
+    width: 47px;
+    height: 48px;
+  }
+  .Company_Name {
+    font-size: 20px;
+    margin-left: 6rem;
+    margin-top: -30px;
+  }
+}
+
+/* Product Details page css start from here */
+.details-snippet1 {
+  color: #585656;
+}
+
+/* Main text uses this styling and color */
+.details-snippet1 .theme-text {
+  color: purple;
+  font-weight: bold;
+}
+
+.details-snippet1 .mini-preview img {
+  border: 1px solid #585656;
+  border: 1px solid purple;
+  margin-bottom: 8px;
+}
+
+.details-snippet1 .title {
+  color: #464343;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.details-snippet1 .price {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.details-snippet1 .original-price {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.brief-description {
+  /* color: #585656; */
+  color: #464343;
+  text-align: justify;
+}
+
+.description {
+  text-align: justify;
+  font-weight: 450;
+  text-indent: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.select-colors .color {
+  display: inline-block;
+  border: 1px solid grey;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: black;
+}
+
+.select-colors .color.red {
+  background-color: red;
+}
+
+.select-colors .color.silver {
+  background-color: silver;
+}
+
+.select-colors .color.black {
+  background-color: black;
+}
+.AddBasket {
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+}
+
+.AddBasket:hover {
+  background-color: #500150;
+  color: white;
+}
+.related-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* color: #464343; */
+}
+
+.details-snippet1 .related-title {
+  color: #464343;
+  font-weight: bold;
+}
+
+.details-snippet1 .related-price {
+  color: #464343;
+  font-weight: bold;
+}
+
+.additional-details .nav-link {
+  border: none;
+  color: #464343;
+}
+
+.additional-details .nav-link.active {
+  background-color: white;
+  color: #464343;
+  border: none;
+  border-bottom: 4px solid purple;
+}
+.related-product1:hover {
+  transform: scale(1.03);
+  transition: 0.9s;
+  position: relative;
+}
+
+.Desc:hover {
+  background-color: brown;
+  color: #ffea11;
+}
+
+/* Footer section start from here */
+.Foot1 {
+  height: auto;
+  background-image: url(images/Footer.jpg);
+  background-color: rgba(0, 0, 0, 0.747);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  padding: 30px 80px 30px 30px;
+}
+.Footer_Text {
+  text-align: justify;
+}
+
+.List {
+  list-style-type: none;
+}
+.reset {
+  text-decoration: none;
+  color: aliceblue;
+}
+.reset:hover {
+  color: #ffea11;
+}
+@media (max-width: 600px) {
+  .Home_footer {
+    margin-left: 3rem;
+  }
+}
+
+
+
+
+

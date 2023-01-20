@@ -1,0 +1,655 @@
+  /**
+  * ! Navbar STyles are here
+  **/
+#content{
+  font-size: 19px;
+}
+
+  .offcanvas-title{
+    color: aqua;
+}
+.offcanvas-title:hover{
+    color: gold;
+}
+
+.Admin_Nav{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(247, 244, 245);
+}
+.Admin_Nav:hover{
+    color: darkorange;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+
+
+.Company_Name {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Logo {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  filter: 3s ease-in;
+  filter: brightness(120%);
+  margin-right: 7px;
+}
+.Logo:hover {
+  filter: brightness(100%);
+  transform: scale(1.4);
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+.Ab {
+  list-style: none;
+  display: inline-block;
+  /* margin: 0 20px;  */
+  display: list-item;
+  position: relative;
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Ab a {
+  text-decoration: none;
+  color: #ffea11;
+  text-transform: uppercase;
+}
+
+.Ab::after {
+  content: "";
+  height: 2px;
+  width: 0; /*100% */
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.5s;
+}
+
+.Ab:hover::after {
+  width: 5rem;
+}
+
+.ImageCard {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  color: black;
+  background-blend-mode: soft-light;
+  background-image: none;
+}
+
+.Main_Title {
+  position: absolute;
+  top: 20%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 80px;
+  color: #ffea11;
+}
+.Main_Text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffea11;
+}
+
+@media (max-width: 767px) {
+  .Main_Title {
+    position: relative;
+    margin-top: -5px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .Main_Text {
+    position: relative;
+    margin-top: -3rem;
+    margin-left: 20px;
+  }
+  .Logo {
+    margin-top: -4.4rem;
+    margin-left: 16.2rem;
+    width: 47px;
+    height: 48px;
+  }
+  .Company_Name {
+    font-size: 20px;
+    margin-left: 6rem;
+    margin-top: -30px;
+  }
+  .Know_more {
+    margin-top: -5rem;
+    position: absolute;
+  }
+  .Know {
+    margin-top: -5rem;
+    position: absolute;
+  }
+}
+
+.Know_more {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: #ffea11;
+  border: 2px solid #082aee;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 40px 30px;
+  width: 150px;
+  height: 40px;
+}
+
+.Know {
+  text-align: center;
+  background: #082aee;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.Know_more:hover .Know {
+  width: 100%;
+}
+.Know_more:hover {
+  border: none;
+  color: #fff;
+}
+
+
+/* Third section start from here */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Cleaning_heading {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: rgba(239, 44, 144, 0.91);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.card_btn {
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #009688;
+}
+
+.card_btn:hover {
+  background-color: rgba(151, 47, 120, 0.904);
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.cards_item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  position: relative;
+}
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+.made_by {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+/* Product Section css start from here */
+.BestSeller_Prod {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: rgba(239, 44, 144, 0.91);
+}
+
+/* Footer Css start from here */
+.Foot1 {
+  height: auto;
+  background-image: url(images/Footer.jpg);
+  background-color: rgba(0, 0, 0, 0.747);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  padding: 30px 80px 30px 30px;
+}
+.Footer_Text {
+  text-align: justify;
+}
+
+.List {
+  list-style-type: none;
+}
+.reset {
+  text-decoration: none;
+  color: aliceblue;
+}
+.reset:hover {
+  color: #ffea11;
+}
+@media (max-width: 600px) {
+  .Home_footer {
+    margin-left: 3rem;
+  }
+  .About_heading{
+    margin-top: 3rem;
+  }
+}
+
+/* About Section Start from here */
+.About_heading {
+  position: relative;
+}
+.About_heading:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 7px;
+  width: 70px;
+  border-radius: 2px;
+  background-color: #2ecc71;
+}
+
+.about_Section {
+  overflow-x: hidden;
+}
+.text-high {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(239, 44, 144, 0.91);
+}
+
+.my_text {
+  text-align: justify;
+  font-weight: 400;
+}
+/* .About_Block {
+  transform:scale(1.1);
+  transition: 0.5s;
+} */
+
+/* Services Section start from here */
+@import url("https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap");
+
+.TI{
+  font-weight: 700;
+}
+.box {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.ML_Heading {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: rgba(239, 44, 144, 0.91);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.Ml_text {
+  text-align: justify;
+}
+
+.img-Servies {
+  border-radius: 20px 50px;
+}
+.img-Servies2 {
+  border-radius: 50px 20px;
+}
+
+.our-services {
+  margin-top: 75px;
+  padding-bottom: 30px;
+  padding: 0 60px;
+  min-height: 198px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 25px 0 rgba(20, 27, 202, 0.17);
+}
+.our-services .icon {
+  margin-bottom: -21px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.our-services:hover h4,
+.our-services:hover h6,
+.our-services:hover p {
+  color: #fff;
+}
+.speedup:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
+}
+.settings:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+}
+.privacy:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%);
+}
+.backups:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%);
+}
+.ssl:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%);
+}
+.database:hover {
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, 0.05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%);
+}
+
+/* Conact css start from here */
+.Contact_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.Contact_section:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("https://i.ibb.co/z4wgBG3/bgg-min.jpg") no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+  background: url("https://i.ibb.co/z4wgBG3/bgg-min.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.Contact {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  color: rgba(239, 44, 144, 0.91);
+}
+
+.Contact:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #2ecc71;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.Send_btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 1.1rem;
+  /* border: none;
+  outline: none;
+  cursor: pointer; */
+  transition: 0.6s;
+}
+
+.Send_btn:hover {
+  background-color: #4f27ae;
+}
+
+.field:focus {
+  border: 2px solid rgba(30, 85, 250, 0.47);
+  background-color: #fff;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+}
+
+
+
+/* Popup Enquiry css start from here */
+/* Modal Poppup start from here */
+.Image_Modal{
+  background-image:linear-gradient(
+  115deg,
+  rgba(0, 35, 115, 0.8),
+  rgba(65, 18, 117, 0.7)), url(/images/Contact.jpg);
+}
+.trigger_popup {
+  transform: rotate(270deg);
+  position: fixed;
+  top: 350px;
+  right: -3rem;
+  width: 10%;
+  height: 9%;
+  z-index: 999;
+  cursor: pointer;
+  background-color: #660029;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.33;
+}
+.border-0 {
+  border: 0 !important;
+}
+
+.trigger_popup:hover {
+  background-color: #1fbe34;
+  color: #f1ebeb;
+}
+
+@media only screen and (max-width: 600px) {
+  .trigger_popup {
+    right: -3rem;
+    width: 40%;
+    height: 8%;
+  }
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.dark-mode {
+  background-color: black;
+  color: rgb(38, 8, 148);
+}

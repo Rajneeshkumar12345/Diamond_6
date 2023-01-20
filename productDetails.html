@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="productdetails.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="productDetails.js"></script>
+</head>
+
+<body id="content">
+
+  <!-- Navbar start from here -->
+  <nav class="navbar bg-primary fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler  text-white" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </button>
+      <h5 class="text-white text-center Company_Name">Diamond Klean</h5>
+      <a class="font-button plus"><button>A+</button></a> <a class="font-button minus"><button>A-</button></a>
+      <a href="home.html">
+        <img src="images/Logo.jpeg" class="Logo img-thumbnails" width="60" height="60" alt="Logo" />
+      </a>
+
+      <div class="offcanvas  offcanvas-start bg-success" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white">
+          <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Diamond Klean</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center text-center Nav_Content ">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">
+                <h3 class="Admin_Nav">Home</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                <h3 class="Admin_Nav">About Us</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">
+                <h3 class="Admin_Nav">Product</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <h3 class="Admin_Nav">Gallery</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">
+                <h3 class="Admin_Nav">Services</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <h3 class="Admin_Nav">Contact Us</h3>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Container Start from  here -->
+  <div class="container" style="box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); margin-top: 6rem; margin-bottom: 3rem;">
+    <div class="row details-snippet1">
+      <div class="col-md-6">
+        <div class="col-md-10">
+          <div class="product-image">
+            <img class="img-fluid" src="/images/pr.png" alt="Main Image">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-md-6">
+        <div class="category ms-3 mt-3"><span class="theme-text">Category:</span> Cleaner</div>
+        <div class="title ms-3">Home Cleaning Broomss</div>
+        <div class="ratings my-2">
+          <div class="stars d-flex">
+            <div class="theme-text mr-2 ms-3">Product Ratings: </div>
+            <div>&#9733;</div>
+            <div>&#9733;</div>
+            <div>&#9733;</div>
+            <div>&#9733;</div>
+            <div>&#9733;</div>
+            <div class="ml-2">(4.5) 50 Reviews</div>
+          </div>
+        </div>
+        <div class="price my-2 ms-3">Rs. 100.00</div>
+        <div class="theme-text subtitle ms-3">Brief Description:</div>
+        <div class="brief-description ms-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta reiciendis odio consequuntur sunt magnam eum
+          facilis quaerat dolor aperiam labore facere amet officiis, unde quae distinctio earum culpa omnis soluta
+          voluptate tempora placeat?.
+        </div>
+
+        <!-- TO REMOVE COLORS -->
+        <div>
+          <div class="subtitle my-3 theme-text ms-3">Colors:</div>
+          <div class="select-colors d-flex ms-3">
+            <div class="color red"></div>
+            <div class="color silver"></div>
+            <div class="color black"></div>
+          </div>
+        </div>
+        <hr>
+        <!-- <div class="row">
+                <div class="col-md-3">
+                    <input type="number" class="form-control" min="1"  placeholder="1" >
+                </div>
+                <div class="col-md-9">
+                  <button class="btn btn-block btn-info"   data-bs-toggle="modal" data-bs-target="#exampleModal"><span style="color: aliceblue;" >Add To Basket</span></button>
+                </div>
+            </div> -->
+
+      </div>
+    </div>
+    <div class="additional-details my-5 text-center">
+      <!--Headings -->
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-tabs ">
+          <a class="nav-link active" data-toggle="tab" data-bs-toggle="tab" href="#Description">
+            <h5>Description</h5>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" data-bs-toggle="tab" href="#Reviews">
+            <h5>Reviews</h5>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" data-bs-toggle="tab" href="#Specifications">
+            <h5>Specifications</h5>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Id Target of heading -->
+      <div class="tab-content mt-4 mb-3">
+        <div class="tab-pane container active" id="Description">
+          <div class="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident magni assumenda consectetur facere eius.
+            Minus reprehenderit placeat ullam vel ab eaque sequi impedit, ipsum soluta temporibus fugit ipsa. Dolor
+            libero modi molestiae dicta, vitae minus laborum error cum consequatur autem minima eveniet porro obcaecati
+            quibusdam possimus eos, debitis sint magnam, explicabo accusantium aspernatur ipsa repellat tempore nihil.
+            Cum placeat voluptate dignissimos dicta harum consectetur, nemo debitis tempore. Quod culpa perspiciatis
+            unde natus. Modi expedita, ab repellendus reiciendis sed voluptate, culpa laborum ad, consectetur quas
+            tempora quo? Quibusdam doloribus magnam maxime, accusamus officiis odit reiciendis labore laudantium.
+            Molestiae corporis temporibus ad?
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="Reviews">
+          <div class="review">
+            <p>PUT REVIEWS HERE</p>
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="Specifications">
+          <div class="specification">
+            <p>PUT SPECIFICATIONS HERE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- New div start from here -->
+
+    <div class="related-products details-snippet1 py-5">
+      <div class="related-heading theme-text">Related Products</div>
+      <div class="row mt-3">
+        <div class="col-md-3 related-product1">
+          <div class="related-product">
+            <img class="img-fluid" src="/images/pr.png" alt="Related Product">
+          </div>
+          <div class="related-title">Home Cleaner</div>
+          <div class="d-flex">
+            <div class="related-price mr-auto">Rs. 100.00</div>
+            <div class="stars d-flex">
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 related-product1">
+          <div class="related-product">
+            <img class="img-fluid" src="/images/pr.png" alt="">
+          </div>
+          <div class="related-title">Home Cleaner</div>
+          <div class="d-flex">
+            <div class="related-price mr-auto">Rs. 120.00</div>
+            <div class="stars d-flex">
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 related-product1">
+          <div class="related-product ">
+            <img class="img-fluid" src="/images/pr.png" alt="">
+          </div>
+          <div class="related-title">Home Cleaner</div>
+          <div class="d-flex">
+            <div class="related-price mr-auto">Rs. 200.00</div>
+            <div class="stars d-flex">
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 related-product1">
+          <div class="related-product">
+            <img class="img-fluid" src="/images/pr.png" alt="">
+          </div>
+          <div class="related-title">Home Cleaner</div>
+          <div class="d-flex">
+            <div class="related-price mr-auto">Rs. 120.00</div>
+            <div class="stars d-flex">
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+              <div>&#9733;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title fw-bold" id="exampleModalLabel">Cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section class="h-100  h-custom" style="background-color: #d2c9ff;">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="card">
+                  <div class="card-body p-0">
+                    <div class="row g-0">
+                      <div class="col-lg-12">
+                        <div class="py-4">
+                          <div class="d-flex justify-content-between align-items-center mb-5">
+                            <h5 class="fw-bold mb-0 text-black">Product</h5>
+                            <h6 class="mb-0 text-muted">2 items</h6>
+                          </div>
+                          <hr class="my-4">
+                          <div class="row mb-4 d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 ">
+                              <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                                class="img-fluid rounded-3" alt="Cotton T-shirt">
+                            </div>
+                            <div class="col-md-3 ">
+                              <h6 class="text-muted">Shirt</h6>
+                              <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                              <input min="1" name="quantity" value="1" type="number"
+                                class="form-control form-control-sm" />
+                            </div>
+                            <div class="col-md-3  offset-lg-1">
+                              <h6 class="mb-0">Rs. 44.00</h6>
+                            </div>
+                            <div class="col-md-1 text-end">
+                              <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                            </div>
+                          </div>
+                          <hr class="my-4">
+
+                          <div class="row mb-4 d-flex justify-content-between align-items-center">
+                            <div class="col-md-2 ">
+                              <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                                class="img-fluid rounded-3" alt="Cotton T-shirt">
+                            </div>
+                            <div class="col-md-3 ">
+                              <h6 class="text-muted">Shirt</h6>
+                              <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                              <input min="1" name="quantity" value="1" type="number"
+                                class="form-control form-control-sm" />
+                            </div>
+                            <div class="col-md-3  offset-lg-1">
+                              <h6 class="mb-0">Rs. 93.00</h6>
+                            </div>
+                            <div class="col-md-1 text-end">
+                              <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                            </div>
+                          </div>
+
+                          <div class="d-flex justify-content-between mb-5 mt-2">
+                            <h5 class="text-uppercase">Total price:-</h5>
+                            <h5>Rs. 137.00</h5>
+                          </div>
+
+                          <div class="d-flex justify-content-between mb-2 mt-5">
+                            <h6 class=""><a href="productDetails.html" class="text-body"><i
+                                  class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+
+                            <button type="button" class="btn btn-dark btn-block btn-lg"
+                              data-mdb-ripple-color="dark">CheckOut</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Footer start from here -->
+  <div class="Foot1">
+    <footer class=" text-lg-start Home_footer">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"><i
+              class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Diamond Klean
+              </h6>
+              <p class="Footer_Text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum consequuntur commodi ducimus
+                blanditiis officiis, placeat veritatis reiciendis deleniti delectus?
+              </p>
+            </div>
+            <div class="col-md-2  mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">Laravel</a>
+              </p>
+            </div>
+            <div class="col-md-3  mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Services
+              </h6>
+              <p>
+                <a href="home.html" class="reset">Home</a>
+              </p>
+              <p>
+                <a href="about.html" class="reset">About</a>
+              </p>
+              <p>
+                <a href="product.html" class="reset">Product</a>
+              </p>
+              <p>
+                <a href="services.html" class="reset">Service</a>
+              </p>
+              <p>
+                <a href="gallery.html" class="reset">Gallery</a>
+              </p>
+              <p>
+                <a href="contact.html" class="reset">Contact Us</a>
+              </p>
+            </div>
+            <div class="col-md-4  mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+
+          </div>
+      </section>
+      <div class="text-center text-muted p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="">Diamond.com</a>
+        || Design and Developed by:
+        <a class="text-reset fw-bold" href="https://codelovertechnology.com/" target="_blank">CodeLover Technology Pvt.
+          Ltd.</a>
+      </div>
+
+    </footer>
+  </div>
+
+
+
+  <script type="text/javascript">
+    $(function () {
+      $(".font-button").bind("click", function () {
+        var size = parseInt($('#content').css("font-size"));
+        if ($(this).hasClass("plus")) {
+          size = size + 2;
+        } else {
+          size = size - 2;
+          if (size <= 10) {
+            size = 10;
+          }
+        }
+        $('#content').css("font-size", size);
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+
+  /**
+  * ! Navbar STyles are here
+  **/
+#content{
+  font-size: 19px;
+}
+
+  .offcanvas-title{
+    color: aqua;
+}
+.offcanvas-title:hover{
+    color: gold;
+}
+
+.Admin_Nav{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(247, 244, 245);
+}
+.Admin_Nav:hover{
+    color: darkorange;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0a6aca;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+  }
+  
+  .cart {
+    position: relative;
+    color: #f8f9fa;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .cartAmount {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
+  /**
+  * ! Shop items styles are here
+  **/
+  
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .shop {
+      grid-template-columns: repeat(2, 223px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .shop {
+      grid-template-columns: repeat(1, 223px);
+    }
+  }
+  
+  .item {
+    border: 2px solid #212529;
+    border-radius: 4px;
+    margin-top: 2rem;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+  }
+  
+  .bi-dash-lg {
+    color: red;
+  }
+  
+  .bi-plus-lg {
+    color: green;
+  }
+  
+  /**
+  * ! style rules for label and some buttons
+  **/
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .HomeBtn,
+  .checkout,
+  .removeAll {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .checkout {
+    background-color: green;
+  }
+  .removeAll {
+    background-color: red;
+  }
+  .bi-x-lg {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /**
+  * ! style rules for shopping-cart
+  **/
+  
+  .shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /**
+  * ! style rules for cart-item
+  **/
+  
+  .cart-item {
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+  }
+  
+  .title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+  }
+  
+  .title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-item-price {
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+  }
+
+
+
+
+  .Foot1 {
+    height: auto;
+    background-image: url(images/Footer.jpg);
+    background-color: rgba(0, 0, 0, 0.747);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255);
+    padding: 30px 80px 30px 30px;
+  }
+  .Footer_Text {
+    text-align: justify;
+  }
+  
+  .List {
+    list-style-type: none;
+  }
+  .reset {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .reset:hover {
+    color: #ffea11;
+  }
+  @media (max-width: 600px) {
+    .Home_footer {
+      margin-left: 3rem;
+    }
+    .About_heading{
+      margin-top: 3rem;
+    }
+  }
+
+  .Quality {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Premium {
+    font-weight: 400;
+    font-family: "Edu VIC WA NT Beginner" "Courier New", Courier, monospace;
+  }

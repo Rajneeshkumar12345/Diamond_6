@@ -1,0 +1,199 @@
+  #content{
+  font-size: 19px;
+ }
+
+
+  .offcanvas-title{
+    color: aqua;
+}
+.offcanvas-title:hover{
+    color: gold;
+}
+
+.Admin_Nav{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(247, 244, 245);
+}
+.Admin_Nav:hover{
+    color: darkorange;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+.Company_Name {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Logo {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  filter: 3s ease-in;
+  filter: brightness(120%);
+  margin-right: 7px;
+}
+.Logo:hover {
+  filter: brightness(100%);
+  transform: scale(1.4);
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+
+
+/* @media (max-width: 767px) {
+  .Main_Title {
+    margin-top: -5px;
+    margin-left: 20px;
+  }
+  .Main_Text {
+    margin-top: -5px;
+    margin-left: 20px;
+  }
+  .Logo {
+    margin-top: -4.4rem;
+    margin-left: 16.2rem;
+    width: 47px;
+    height: 48px;
+  }
+  .Company_Name {
+    font-size: 20px;
+    margin-left: 6rem;
+    margin-top: -30px;
+  }
+} */
+
+/* About section start from here */
+/* .About_heading {
+  position: relative;
+  padding: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 3rem;
+  margin-top: -2rem;
+}
+.About_heading:after {
+  content: "";
+  position: absolute;
+  margin-left: -3rem;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 100px;
+  border-radius: 2px;
+  background-color: #414aa1;
+} */
+/* .About_Page_H1 {
+  margin-left: 3rem;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.About_Com_Text {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+}
+.about_Com_Text {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  margin-left: 45px;
+} */
+
+.about_icon i {
+  font-size: 22px;
+  height: 65px;
+  width: 65px;
+  line-height: 65px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 35px;
+  color: #00bd2a;
+  box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
+}
+
+/* .about_header_main .about_heading {
+  max-width: 450px;
+  font-size: 24px;
+} */
+
+.about_icon span {
+  position: relative;
+  top: -10px;
+}
+
+/* .about_content_box_all {
+  padding: 28px;
+}
+.Mission {
+  font-size: 50px;
+  font-weight: 800;
+}
+@media (max-width: 767px) {
+  .about_Com_Text {
+    text-align: center;
+    text-align: justify;
+    margin-left: -3px;
+  }
+  .About_Com_Text {
+    text-align: justify;
+  }
+  .about_heading {
+    text-align: center;
+  }
+} */
+
+/* .banner {
+    background-image: url(images/Footer.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+/* Footer Css start from here */
+.Foot1 {
+  height: auto;
+  background-image: url(images/Footer.jpg);
+  background-color: rgba(0, 0, 0, 0.747);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  padding: 30px 80px 30px 30px;
+}
+
+.Footer_Text {
+  text-align: justify;
+}
+
+.List {
+  list-style-type: none;
+}
+.reset {
+  text-decoration: none;
+  color: aliceblue;
+}
+.reset:hover {
+  color: #ffea11;
+}
+@media (max-width: 600px) {
+  .Home_footer {
+    margin-left: 3rem;
+  }
+}
+
+
+
+
+
+

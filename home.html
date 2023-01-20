@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="home.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="home.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body id="content">
+  <nav class="navbar bg-primary fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler  text-white" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </button>
+      <h5 class="text-white text-center Company_Name">Diamond Klean</h5>
+      <a class="font-button plus"><button>A+</button></a> <a class="font-button minus"><button>A-</button></a>
+      <div class="form-check form-switch">
+        <label class="form-check-label text-white" for="flexSwitchCheckDefault">Mode</label>
+        <input onclick="myFunction()" class="form-check-input" type="checkbox" role="switch"
+          id="flexSwitchCheckDefault">
+      </div>
+      <a href="home.html">
+        <img src="images/Logo.jpeg" class="Logo img-thumbnails" width="60" height="60" alt="Logo" />
+      </a>
+
+      <div class="offcanvas  offcanvas-start bg-success" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white">
+          <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Diamond Klean</h2>
+
+
+          <!-- <i onclick="myFunction()"  class="fa-solid fa-toggle-on fa-2xl"></i> -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center text-center Nav_Content ">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">
+                <h3 class="Admin_Nav">Home</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                <h3 class="Admin_Nav">About Us</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">
+                <h3 class="Admin_Nav">Product</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <h3 class="Admin_Nav">Gallery</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">
+                <h3 class="Admin_Nav">Services</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <h3 class="Admin_Nav">Contact Us</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section=two">
+    <div class="card">
+      <img src="images/Diamond.jpg" class="ImageCard" alt="not-found">
+      <div class="card-img-overlay">
+        <h5 class="card-title Main_Title">Home Cleaning Accessories</h5>
+        <p class="card-text Main_Text">This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.</p>
+        <a href="about.html">
+          <button type="button" class="Know_more"><span class="Know"></span>KNOW MORE</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Popup Enquire start from here -->
+
+  <button class="trigger_popup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <h4> Enquiry</h4>
+  </button>
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content Image_Modal text-white">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Get In Touch</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="validationDefault01" class="form-label">Name</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Enter Your Full Name"
+                required>
+            </div>
+            <div class="col-md-12">
+              <label for="validationDefaultUsername" class="form-label">E-mail</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="email" class="form-control" id="validationDefaultUsername" placeholder="Enter E-mail"
+                  aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationDefault02" class="form-label">Phone</label>
+              <input type="number" class="form-control" id="validationDefault02" placeholder="Enter Phone" required>
+            </div>
+
+            <div class="col-md-12">
+              <label for="validationDefault03" class="form-label">Message</label>
+              <textarea class="form-control" id="validationDefault03" placeholder="Enter Comment" required></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Product Section 1 start from here -->
+  <section>
+    <div class="main">
+      <h1 class="mt-5  Cleaning_heading  mb-5">Cleaning Supplies</h1>
+      <ul class="cards">
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+            <div class="card_content">
+              <p class="card_title">Card Grid Layout</p>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+            <div class="card_content">
+              <p class="card_title">Card Grid Layout</p>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+            <div class="card_content">
+              <p class="card_title">Card Grid Layout</p>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+            <div class="card_content">
+              <p class="card_title">Card Grid Layout</p>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+            <div class="card_content">
+              <p class="card_title">Card Grid Layout</p>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+            <div class="card_content">
+              <p class="card_title">Card Grid Layout</p>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Product Section 2 start from here -->
+  <section>
+    <div class="text-center container py-5">
+      <h4 class="mt-4 mb-5 BestSeller_Prod"><strong>-: Bestsellers Products :-</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp" class="w-100" />
+              <a href="#!">
+
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <p class="card-title mb-3  fw-bold">Product name</p>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <p class="mb-3">
+                <strong class="ms-2 text-danger">Rs.70.99</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+                class="w-100" />
+              <a href="#!">
+
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <p class="card-title mb-3  fw-bold">Product name</p>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <p class="mb-3">
+                <strong class="ms-2 text-danger">Rs.60.99</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).webp"
+                class="w-100" />
+              <a href="#!">
+
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <p class="card-title mb-3 fw-bold">Product name</p>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <p class="mb-3">
+                <strong class="ms-2 text-danger">Rs.50.99</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp"
+                class="w-100" />
+              <a href="#!">
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <p class="card-title mb-3 fw-bold">Product name</p>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <p class="mb-3">
+                <strong class="ms-2 text-danger">Rs.50.99</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(17).webp"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100"></div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <p class="card-title mb-3 fw-bold">Product name</p>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <p class="mb-3">
+                <strong class="ms-2 text-danger">Rs.50.99</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp"
+                class="w-100" />
+              <a href="#!">
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <p class="card-title mb-3 fw-bold">Product name</p>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <p class="mb-3">
+                <strong class="ms-2 text-danger">Rs.50.99</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about_Section mt-5 mb-5">
+    <section class="gap-top service-middle-banner-bottom-wrapp">
+      <div class="container">
+        <div class="row align-items-center service-middle-banner-bottom-block">
+          <div class="col-md-5 ser-mid-banner-bottom-image-block">
+            <img src="/images/About.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-7  text-center">
+            <div class="text-high About_heading">About Us</div>
+            <p></p>
+            <p class="my_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati quis quisquam corrupti
+              perspiciatis alias cumque, omnis corporis quibusdam quidem?
+            </p>
+            <p></p>
+            <div class="row">
+              <div class="col-md-4 text-center mb-3 mt-5">
+                <div class="card  bg-info ">
+                  <div class="card-header text-white"><i class="fas fa-phone me-3"></i> Call Us</div>
+                  <div class="card-body">
+                    <p class="card-text text-white">+ 01 234 567 88</p>
+                    <p class="card-text text-white">+ 01 234 567 89</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center  mb-3 mt-5">
+                <div class="card  bg-info About_Block">
+                  <div class="card-header text-white"><i class="fas fa-home me-3"></i>Location</div>
+                  <div class="card-body">
+                    <p class="card-text text-white">New York, NY 10012, US</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center  mb-3 mt-5">
+                <div class="card  bg-info">
+                  <div class="card-header text-white"><i class="fas fa-envelope me-3"></i>Email Us</div>
+                  <div class="card-body">
+                    <p class="card-text text-white">info@example.com</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- Services Section Start from here -->
+  <div class="container-fluid mb-5">
+    <div class="text-center  mt-5">
+      <h1 class="ML_Heading">Our Services</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box">
+          <div class="our-services settings">
+            <div class="icon">
+              <img src="images/Diamond.jpg" alt="ml_sticker" class="img-Servies" width="150" height="80" />
+            </div>
+            <p class="TI">Title</p>
+            <p class="Ml_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="our-services speedup">
+            <div class="icon">
+
+              <img src="images/Diamond.jpg" alt="ml_sticker" class="img-Servies" width="150" height="80" />
+            </div>
+            <p class="TI">Title</p>
+            <p class="Ml_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="our-services privacy">
+            <div class="icon">
+
+              <img src="images/Diamond.jpg" alt="ml_sticker" class="img-Servies" width="150" height="80" />
+            </div>
+            <p class="TI">Title</p>
+            <p class="Ml_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box">
+          <div class="our-services backups">
+            <div class="icon">
+
+              <img src="images/Diamond.jpg" alt="ml_sticker" class="img-Servies2" width="150" height="80" />
+            </div>
+            <p class="TI">Title</p>
+            <p class="Ml_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="our-services ssl">
+            <div class="icon">
+
+              <img src="images/Diamond.jpg" alt="ml_sticker" class="img-Servies2" width="150" height="80" />
+            </div>
+            <p class="TI">Title</p>
+            <p class="Ml_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="our-services database">
+            <div class="icon">
+
+              <img src="images/Diamond.jpg" alt="ml_sticker" class="img-Servies2" width="150" height="80" />
+            </div>
+            <p class="TI">Title</p>
+            <p class="Ml_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section start from here -->
+  <div class="container Contact_section">
+    <div class="contact-box">
+      <div class="left"></div>
+      <div class="right">
+        <h2 class="Contact">Contact Us</h2>
+        <input type="text" class="field" placeholder="Your Name">
+        <input type="text" class="field" placeholder="Your Email">
+        <input type="text" class="field" placeholder="Phone">
+        <textarea placeholder="Message" class="field"></textarea>
+        <button class="btn Send_btn btn-success">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer start from here -->
+  <div class="Foot1">
+    <footer class=" text-lg-start Home_footer">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"><i
+              class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Diamond Klean
+              </h6>
+              <p class="Footer_Text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum consequuntur commodi ducimus
+                blanditiis officiis, placeat veritatis reiciendis deleniti delectus?
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="reset">Laravel</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Services
+              </h6>
+              <p>
+                <a href="home.html" class="reset">Home</a>
+              </p>
+              <p>
+                <a href="about.html" class="reset">About</a>
+              </p>
+              <p>
+                <a href="product.html" class="reset">Product</a>
+              </p>
+              <p>
+                <a href="services.html" class="reset">Service</a>
+              </p>
+              <p>
+                <a href="gallery.html" class="reset">Gallery</a>
+              </p>
+              <p>
+                <a href="contact.html" class="reset">Contact Us</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+
+          </div>
+      </section>
+      <div class="text-center text-muted p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="">Diamond.com</a>
+        || Design and Developed by:
+        <a class="text-reset fw-bold" href="https://codelovertechnology.com/" target="_blank">CodeLover Technology Pvt.
+          Ltd.</a>
+      </div>
+
+    </footer>
+  </div>
+
+
+    <!-- Dark Mode -->
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+
+      <!-- Font Size -->
+<script type="text/javascript">
+  $(function () {
+    $(".font-button").bind("click", function () {
+      var size = parseInt($('#content').css("font-size"));
+      if ($(this).hasClass("plus")) {
+        size = size + 1;
+      } else {
+        size = size - 1;
+        if (size <= 10) {
+          size = 10;
+        }
+      }
+      $('#content').css("font-size", size);
+    });
+  });
+</script>
+</body>
+
+</html>

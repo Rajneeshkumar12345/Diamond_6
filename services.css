@@ -1,0 +1,122 @@
+  /**
+  * ! Navbar STyles are here
+  **/
+
+#content{
+  font-size: 17px;
+}
+
+#content .Tips_heading {
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+  .offcanvas-title{
+    color: aqua;
+}
+.offcanvas-title:hover{
+    color: gold;
+}
+
+.Admin_Nav{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(247, 244, 245);
+}
+.Admin_Nav:hover{
+    color: darkorange;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+
+.Company_Name {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Logo {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  filter: 3s ease-in;
+  filter: brightness(120%);
+  margin-right: 7px;
+}
+.Logo:hover {
+  filter: brightness(100%);
+  transform: scale(1.4);
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+
+/* Service page css start from here */
+.serviceBox p {
+  text-align: justify;
+}
+.serviceBox {
+  text-align: center;
+}
+
+.Tips_Text {
+  text-align: justify;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Floor_Text {
+  text-indent: 10px;
+  text-align: justify;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Floor_Text li {
+  text-align: justify;
+}
+.Row1 {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Heading_para{
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Footer Css start from here */
+.Foot1 {
+  height: auto;
+  background-image: url(images/Footer.jpg);
+  background-color: rgba(0, 0, 0, 0.747);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(255, 255, 255);
+  padding: 30px 80px 30px 30px;
+}
+.Footer_Text {
+  text-align: justify;
+}
+
+.List {
+  list-style-type: none;
+}
+.reset {
+  text-decoration: none;
+  color: aliceblue;
+}
+.reset:hover {
+  color: #ffea11;
+}
+@media (max-width: 600px) {
+  .Home_footer {
+    margin-left: 3rem;
+  }
+}
